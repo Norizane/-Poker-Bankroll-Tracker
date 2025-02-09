@@ -1,0 +1,14 @@
+.mainPageContainer {
+  background-color: #5c6165;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+  padding: 20px;
+  .mainComponentsContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+}
