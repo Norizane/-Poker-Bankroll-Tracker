@@ -1,4 +1,31 @@
+@use "../styles/variables.scss" as vars;
+@use "../styles/mixins.scss" as mixins;
 .navBarContainer {
-  background-color: #36393b;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  color: white;
   height: 200px;
+  .buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    button {
+      color: white;
+      padding: 5px 10px;
+      margin-right: 20px;
+      height: 100px;
+      width: 300px;
+      background-color: transparent;
+      border: 1px solid rgba(79, 172, 254, 0.5);
+      box-shadow: 0 0 10px rgba(79, 172, 254, 0.3);
+      color: white;
+      font-size: 32px;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+  }
 }

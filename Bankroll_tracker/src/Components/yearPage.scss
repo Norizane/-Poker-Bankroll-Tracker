@@ -1,3 +1,9 @@
+@use "../styles/variables.scss" as vars;
+@use "../styles/mixins.scss" as mixins;
 .yearPageContainer {
-  background-color: #36393b;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  color: white;
 }

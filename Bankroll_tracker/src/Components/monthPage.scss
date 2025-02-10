@@ -1,3 +1,48 @@
+@use "../styles/variables.scss" as vars;
+@use "../styles/mixins.scss" as mixins;
+
 .monthPageContainer {
-  background-color: #36393b;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  color: white;
+  .monthPageNavBar {
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px;
+
+    button {
+      color: white;
+      padding: 5px 10px;
+      margin-right: 20px;
+      width: 100px;
+      background-color: transparent;
+      border: 1px solid rgba(79, 172, 254, 0.5);
+      box-shadow: 0 0 10px rgba(79, 172, 254, 0.3);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    .page {
+      opacity: 1;
+      // transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .visible {
+      opacity: 1;
+      pointer-events: auto;
+      transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
