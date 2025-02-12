@@ -15,20 +15,20 @@ Our application helps players:
 
 The project is built using modern web technologies to ensure high performance, scalability, and the best user experience:
 
-- **TypeScript & JavaScript** – ensure safe and readable code.
-- **React** – the main framework for building dynamic user interfaces.
-- **SCSS & CSS Grid** – advanced styles ensuring aesthetic design and responsiveness.
-- **Cypress** – a testing framework that ensures code stability and quality.
+- **TypeScript.
+- **React** .
+- **SCSS & CSS Grid**.
+- **Cypress**.
 
 Additionally, the application may use:
 
 - **LocalStorage or Firebase** – for storing user data.
-- **Chart.js or Recharts** – for visualizing bankroll statistics in the form of charts.
+- **Chart.js** – for visualizing bankroll statistics in the form of charts.
 
 ## Test Cases
 
 Detailed test cases are available in the Excel spreadsheet:  
-👉 [Test Cases](https://github.com/YourRepository/TestCases.xlsx)
+👉 [Test Cases](https://1drv.ms/x/c/fcecb40786e989a0/EVc0Z9R6WKtDs5QxnwzdcAUBA-GrprWFvOv-vdnEBOZsuw?e=hkKnNz)
 
 ## Installation and Setup
 
@@ -38,3 +38,20 @@ To run the application locally, follow these steps:
 
    ```bash
    git clone https://github.com/YourRepository.git
+2. Navigate to the project directory:
+
+   ```bash
+   cd Bankroll_tracker
+3. Install dependencies:
+
+   ```bash
+   npm install
+4. Start the application:
+
+   ```bash
+   npm start
+5. Run tests:
+
+   ```bash
+   npm run test
+
