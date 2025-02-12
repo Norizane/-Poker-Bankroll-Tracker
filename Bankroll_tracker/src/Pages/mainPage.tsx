@@ -1,7 +1,8 @@
 import YearPage from "../Components/yearPage";
 import MonthPage from "../Components/monthPage";
 import NavBar from "../Components/navBar";
-const mainPage = () => {
+import { FC } from "react";
+const mainPage: FC = () => {
   return (
     <>
       <div className="mainPageContainer">

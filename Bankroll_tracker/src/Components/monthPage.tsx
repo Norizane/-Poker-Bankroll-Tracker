@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { FC } from "react";
 import Form from "./monthPageComponents/Form";
 import Sessions from "./monthPageComponents/Sessions";
 
-const MonthPage = () => {
+const MonthPage: FC = () => {
   const [activePage, setActivePage] = useState<"form" | "sessions">("form");
   const [isVisible, setIsVisible] = useState(true);
 

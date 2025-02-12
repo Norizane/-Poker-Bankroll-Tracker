@@ -1,4 +1,5 @@
-const navBar = () => {
+import { FC } from "react";
+const navBar: FC = () => {
   return (
     <>
       <div className="navBarContainer">
